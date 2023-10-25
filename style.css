@@ -1,0 +1,21 @@
+.sub-sections {
+    width: 200px;
+    height: 150px;
+}
+
+.description {
+    
+    text-align: justify;
+    display: block;
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: lightgray;
+}
+
+h1, h2, h3, nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightcoral;
+}
