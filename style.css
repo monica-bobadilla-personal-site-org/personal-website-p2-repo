@@ -9,6 +9,10 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+p:hover {
+    background-color: lightgreen;
+}
+
 html, body {
     margin: 0;
     height: 100%;
@@ -27,14 +31,8 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    align-items: center;
     justify-content: center;
-}
-
-#superwoman {
-    display: flex;
-    flex-direction: column;
-    left: 600px;
-    position: relative;
 }
 
 /*about me and portfolio
@@ -63,9 +61,9 @@ IF EXTRA TIME: Fix h1 to be centered
     margin-bottom: 15px;
 }
 
-#ice-cream, .h3-title-right {
+.h3-title-right {
     position: relative;
-    left: 1350px;
+    right: 500px;
 }
 
 #ice-cream-description {
@@ -81,6 +79,37 @@ IF EXTRA TIME: Fix h1 to be centered
     margin-right: 50px;
 }
 
+/*portfolio* -- research order / flex start /
+
+#tech-section, #teacher-section, #movement-section {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.h3-title-right {
+    position: relative;
+    left: 100px;
+}
+
+#tech-description {
+    position: relative;
+    flex: 10%;
+    margin-left: 50px;
+}
+
+#tech-img {
+    position: relative;
+    flex: 20%;
+    margin-right: 50px;
+}
+
+.image, #tech-img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
 
 /*form*/
 
@@ -92,6 +121,15 @@ IF EXTRA TIME: Fix h1 to be centered
     align-items: center;
 }
 
+@media screen and (min-width: 390px) {
+    #henry-section, #ice-cream-section, #movement-section  {
+        flex-direction: column;
+    }    
+}
+
+body {
+    width: 100vw;
+}
 
 /* ARCHIVE
 
