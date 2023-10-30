@@ -19,6 +19,14 @@ html, body {
     background-color: lightgray;
 }
 
+h1:hover {
+    font-size: larger;
+}
+
+body {
+    width: 100vw;
+}
+
 /*homepage*/
 
 /* QUESTIONS
@@ -79,7 +87,13 @@ IF EXTRA TIME: Fix h1 to be centered
     margin-right: 50px;
 }
 
-/*portfolio* -- research order / flex start /
+@media screen and (min-width: 390px) {
+    #henry-section, #ice-cream-section, #movement-section  {
+        flex-direction: column;
+    }    
+}
+
+/*portfolio*/
 
 #tech-section, #teacher-section, #movement-section {
     display: flex;
@@ -119,16 +133,6 @@ IF EXTRA TIME: Fix h1 to be centered
     height: 100%;
     justify-content: center;
     align-items: center;
-}
-
-@media screen and (min-width: 390px) {
-    #henry-section, #ice-cream-section, #movement-section  {
-        flex-direction: column;
-    }    
-}
-
-body {
-    width: 100vw;
 }
 
 /* ARCHIVE
