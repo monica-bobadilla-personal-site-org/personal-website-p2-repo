@@ -15,15 +15,16 @@
     </nav>
     <h1>Contact Information</h1>
     <div>
-        <form id="my-form">
+        <form id="form-container">
             <p>Questions? Write me a message below.</p>
             <label for="fname">Full name:</label><br>
             <input type="text" id="fname" name="full-name"><br>
             <label for="email">Email</label><br>
             <input type="text" id="email" name="email">
             <label for="message">Message</label><br>
-            <input type="text" id="message" name="message">
+            <input style="width: 250px; height: 250px;" type="text" id="message" name="message">
             <button type="submit">submit</button>
+            <div id="submission-alert-msg" style="margin-top: 50px;"></div>
         </form>
     </div>
     <script src="javascript.js"></script>

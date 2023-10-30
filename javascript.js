@@ -1,24 +1,23 @@
+// allow page to load, then run function
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("myForm");
-    const messageDiv = document.getElementById("message");
+    
+    // create variables to store form and alert message after submission
+    const form = document.getElementById("form-container");
+    const alertMsg = document.getElementById("submission-alert-msg");
 
-    form.addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent the default form submission
+    // declare function that will run when user presses submit
+    form.addEventListener("submit", function (event) {
+        
+        // hold on deleting inputs
+        event.preventDefault(); 
 
-        // You can perform form validation here if needed
+        // declare variable to store submission message
+        const message = 'Message submitted successfully.';
 
-        // Get the form data
-        const formData = new FormData(form);
-        const name = formData.get("name");
-        const email = formData.get("email");
+        // Update alert message div with message submission verbiage once submission has gone through
+        alertMsg.innerHTML = message;
 
-        // Replace this with your desired message or processing logic
-        const message = `Thank you, ${name}! Your email (${email}) has been submitted.`;
-
-        // Display the message
-        messageDiv.innerHTML = message;
-
-        // You can also reset the form if needed
+        // Reset form to clear out inputs and start again
         form.reset();
     });
 });
